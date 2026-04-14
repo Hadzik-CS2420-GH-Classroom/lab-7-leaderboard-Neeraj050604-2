@@ -91,9 +91,9 @@ int main()
     // Leaderboard stats
     // -------------------------------------------------------------------------
     std::cout << "\n--- Leaderboard stats ---\n";
-    std::cout << "height:      " << board.height()   << "\n";
-    std::cout << "size:        " << board.size()      << "\n";
-    std::cout << "is_empty:    " << (board.is_empty()    ? "true" : "false") << "\n";
+    std::cout << "height:      " << board.height() << "\n";
+    std::cout << "size:        " << board.size() << "\n";
+    std::cout << "is_empty:    " << (board.is_empty() ? "true" : "false") << "\n";
     std::cout << "is_balanced: " << (board.is_balanced() ? "true" : "false") << "\n";
 
     // -------------------------------------------------------------------------
@@ -131,7 +131,7 @@ int main()
     degen.insert(4000);
     degen.insert(5000);
     std::cout << "is_balanced (should be false): "
-              << (degen.is_balanced() ? "true" : "false") << "\n";
+        << (degen.is_balanced() ? "true" : "false") << "\n";
 
     // -------------------------------------------------------------------------
     // Season reset
@@ -139,8 +139,8 @@ int main()
     std::cout << "\n--- Season reset ---\n";
     board.clear();
     std::cout << "After clear: is_empty = " << (board.is_empty() ? "true" : "false")
-              << ", size = " << board.size()
-              << ", height = " << board.height() << "\n";
+        << ", size = " << board.size()
+        << ", height = " << board.height() << "\n";
 
     std::cout << "\n=== Lab 7 Complete ===\n";
     return 0;
